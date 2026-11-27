@@ -1,0 +1,10 @@
+[package]
+name = "aviato-nav-sim"
+description = "Synthetic truth, sensor models, and the seeded experiment runner"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+aviato-nav-core = { path = "../aviato-nav-core" }
