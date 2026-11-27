@@ -13,6 +13,19 @@ A small Rust navigation-estimation engine: IMU-driven state propagation, correct
 
 Linear algebra uses [`nalgebra`](https://nalgebra.rs).
 
+## Workspace
+
+| Crate | Target | Role |
+|---|---|---|
+| `aviato-nav-core` | lib | Estimator: state, propagation, EKF, measurement models |
+| `aviato-nav-sim` | lib and `aviato-nav-sim` binary | Truth trajectories, sensor models, seeded experiment runner |
+
+```bash
+cargo test --workspace
+cargo clippy --workspace --all-targets -- -D warnings
+cargo doc --workspace --no-deps
+```
+
 ## Milestones
 
 | | Milestone |
